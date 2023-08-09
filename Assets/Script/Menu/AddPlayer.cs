@@ -33,6 +33,7 @@ namespace YARG.UI
             RealGuitar,
             FourLaneDrums,
             FiveLaneDrums,
+            Keys,
 
             // IMPORTANT: Vocals must be last in the list (excluding the count),
             // types following it won't show up or be choosable
@@ -270,6 +271,7 @@ namespace YARG.UI
                     StrategyType.RealGuitar     => "Pro Guitar",
                     StrategyType.FourLaneDrums  => "Drums (Standard)",
                     StrategyType.FiveLaneDrums  => "Drums (5-lane)",
+                    StrategyType.Keys           => "Keys",
                     StrategyType.Vocals         => "Microphone",
                     _                           => throw new Exception("Invalid input strategy type!")
                 };
@@ -290,6 +292,7 @@ namespace YARG.UI
             {
                 StrategyType.FiveFretGuitar => new FiveFretInputStrategy(),
                 StrategyType.RealGuitar     => new RealGuitarInputStrategy(),
+                StrategyType.Keys           => new KeysInputStrategy(),
                 StrategyType.FourLaneDrums  => new DrumsInputStrategy(),
                 StrategyType.FiveLaneDrums  => new GHDrumsInputStrategy(),
                 StrategyType.Vocals         => new MicInputStrategy(),

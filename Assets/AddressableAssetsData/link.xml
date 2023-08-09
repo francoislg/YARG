@@ -2,6 +2,7 @@
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="YARG.PlayMode.DrumsTrack" preserve="all" />
     <type fullname="YARG.PlayMode.FiveFretTrack" preserve="all" />
+    <type fullname="YARG.PlayMode.KeysTrack" preserve="all" />
     <type fullname="YARG.PlayMode.Fret" preserve="all" />
     <type fullname="YARG.PlayMode.RealGuitarTrack" preserve="all" />
     <type fullname="YARG.Pools.BeatLine" preserve="all" />
